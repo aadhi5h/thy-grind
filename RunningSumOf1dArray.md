@@ -1,4 +1,4 @@
-#1480 Running Sum of 1D Array:
+# 1480 Running Sum of 1D Array:
 
 Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
 
@@ -16,7 +16,7 @@ Constraints:
     1 <= nums.length <= 1000
     -10^6 <= nums[i] <= 10^6
 
-#Solution:
+# Solution:
 
 [Code](febcodes\feb_02.cpp)
 
