@@ -5,6 +5,7 @@ struct ListNode{
     struct ListNode *next;
 };
 
+//General method
 ListNode* FindMiddleNode(ListNode *head){
     ListNode *L1 = head;
     int counter = 0;
@@ -24,3 +25,16 @@ ListNode* FindMiddleNode(ListNode *head){
     }
     return L2;
 }
+
+//Floyd's Tortoise and Hare Algorithm
+ListNode* middleNode(ListNode* head) {
+        ListNode *T = head, *H = head;
+        while (H != nullptr){
+            H = H->next;
+            if (H != nullptr){
+                H = H->next;
+                T = T->next;
+            }
+        }
+        return T;
+    }
